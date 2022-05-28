@@ -27,7 +27,7 @@ window.onload = () => {
     if (!name && !email) return sweetalert('error','Error!','isi semua input terlebih dahulu!');
     if (!name) return sweetalert('info','Info','isi input nama terlebih dahulu!');
     if (!email) return sweetalert('info','Info','isi input email terlebih dahulu!');
-    if (name.match(/[0-9]/)) return sweetalert('error','Error','input nama hanya boleh berisikan angka!');
+    if (name.match(/[0-9]/)) return sweetalert('error','Error','input nama hanya boleh berisikan huruf saja!');
     if (!email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) return sweetalert('error','Error','input email tidak berisikan format email yang benar!');
     return true;
   }
